@@ -2,6 +2,8 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -27,6 +29,7 @@ public class MyAccount {
     private By zipcode = By.xpath("//*[@id=\"Address_ZipPostalCode\"]");
     private By save = By.xpath("/html/body/div[6]/div[3]/div/div[2]/form/div/div[2]/div[2]/button");
     private By number = By.xpath("//*[@id=\"Address_PhoneNumber\"]");
+    private By ele = By.xpath("/html/body/div[6]/div[2]/ul[1]/li[1]/a");
 
     public void setUpMyAcc(){
         driver.findElement(myAcc).click();
@@ -82,5 +85,9 @@ public class MyAccount {
 
     public void saveBTN(){
         driver.findElement(save).click();
+    }
+
+    public void hoverElement(){
+        driver.findElement(ele).click();
     }
 }
