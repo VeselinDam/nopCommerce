@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 public class AddReviewsOnItem {
 
     protected WebDriver driver;
+
     public AddReviewsOnItem(WebDriver driver){
         this.driver = driver;
     }
